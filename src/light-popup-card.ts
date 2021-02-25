@@ -379,7 +379,7 @@ class LightPopupCard extends LitElement {
             color: #f7d959;
         }
         h4 {
-            color: #FFF;
+            color: var(--text-color);
             display: block;
             font-weight: 300;
             margin-bottom: 30px;
@@ -394,6 +394,7 @@ class LightPopupCard extends LitElement {
             width: var(--slider-width);
             position:relative;
             display: block;
+            margin-bottom: 20px;
         }
         .range-holder input[type="range"] {
             outline: 0;
@@ -464,6 +465,7 @@ class LightPopupCard extends LitElement {
             width: var(--switch-width);
             position:relative;
             display: block;
+            margin-bottom: 20px;
         }
         .switch-holder input[type="range"] {
             outline: 0;
@@ -501,7 +503,6 @@ class LightPopupCard extends LitElement {
             background: var(--switch-color);
             transition: box-shadow 0.2s ease-in-out;
             border: none;
-            box-shadow: -1px 1px 20px 0px rgba(0,0,0,0.75);
             position: relative;
             top: 0;
             border-radius: var(--slider-border-radius, 12px);
@@ -510,7 +511,6 @@ class LightPopupCard extends LitElement {
         .action-holder {
             display: flex;
             flex-direction: column;
-            margin-top:20px;
         }
         .action-row {
             display:block;
